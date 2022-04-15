@@ -32,6 +32,27 @@ header.masthead h1, header.masthead .h1 {
     background-size: cover;
 }
 
+
+.cards-bg{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    /*background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-carosello.jpg");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.card-text{
+    display: none;
+}
+
+
+
+#header {
+    background: url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) center center / cover no-repeat ;
+}
+
 .bg-dark {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
@@ -87,6 +108,9 @@ hr.divider-light {
     height: 90%;
     margin-top: -100px;
 }
+
+
+
 
 .navbar-shrink{
     transition: 0.5s;

@@ -53,6 +53,34 @@ function loaded(){
 }
 
 
+$(document).ready(function(){
+    
+    $("div#card1").on({
+        mouseenter: function(){
+        $("p#card1").slideDown();
+        },
+        mouseleave: function(){
+        $("p#card1").slideUp();
+        },
+    });
 
+    $("div#card2").on({
+        mouseenter: function(){
+        $("p#card2").slideDown();
+        },
+        mouseleave: function(){
+        $("p#card2").slideUp();
+        },
+    });
 
+    $("div#card3").on({
+        mouseenter: function(){
+        $("p#card3").slideDown();
+        },
+        mouseleave: function(){
+        $("p#card3").slideUp();
+        },
+    });
+
+});
 

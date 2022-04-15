@@ -6,3 +6,4 @@ Base del sito fotografico!
 -Tolto i file inutilizzati di bootstrap.<br />
 -Aggiunto il javascript per alcune funzioni aggiuntive (vedere file). <br />
 -Reso la navbar sensibile allo scroll della pagina. <br />
+-Aggiunto le cards per i servizi fotografici. <br />
