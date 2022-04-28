@@ -1,3 +1,6 @@
+<?php
+ ob_start();
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -28,17 +31,29 @@
             recensioni: -recensione
                         -nome
         */
-        $db_name   = "lorenzoarcioni";
-        $db_usr    = "lorenzo";
+        $db_name   = "esempio";
+        $db_usr    = "root";
         $db_passwd = "lorenzo";
         $db_host   = "localhost";
-        $connection=mysqli_connect($db_host, $db_usr, $db_passwd);
+        $connection=mysqli_connect($db_host, $db_usr);
         $db=mysqli_select_db($connection, $db_name);
     ?>
 </head>
 <body onload="loaded()">
+   
+    <!--
+
+        <a href="">
+        <img src="assets/img/Facebook.png" class="fixed-bottom-right"  ></img> 
+         </a>
+    -->
+
+   
+   
+   
+
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-1 px-lg-1">
             <a class="navbar-brand logo" id="logo" href="#top">
             </a>
@@ -50,6 +65,7 @@
         
             <div class="collapse navbar-collapse flo" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 text-center">
+                    <li class="nav-item p-1"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#contact">Contact</a></li>
@@ -79,56 +95,57 @@
         </div>
     </header>
     <!-- Carousel -->
-    <div class="carousel-bg bg-dark" data-interval="2">
-        <div class="row gx-4 bg gx-lg-0 h-100 align-items-center justify-content-center text-center">
-            <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel1">
-                <h2 class="text-white mt-0">My photos</h2>
-                <hr class="divider divider-light" />
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    
+        <div class="carousel-bg bg-dark" data-interval="2">
+            <div class="row gx-4 bg gx-lg-0 h-100 align-items-center justify-content-center text-center">
+                <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel1">
+                    <h2 class="text-white mt-0">My photos</h2>
+                    <hr class="divider divider-light" />
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets\img\2ConLogo.png" alt="Los Angeles" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Photo 1</h3>
+                                <p>Description 1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets\img\3ConLogo.png" alt="Chicago" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Photo 2</h3>
+                                <p>Description 2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets\img\4ConLogo.png" alt="New York" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Photo 3</h3>
+                                <p>Description 3</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
-            
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets\img\portfolio\thumbnails\4.jpg" alt="Los Angeles" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h3>Photo 1</h3>
-                            <p>Description 1</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets\img\portfolio\thumbnails\1.jpg" alt="Chicago" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h3>Photo 2</h3>
-                            <p>Description 2</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets\img\portfolio\thumbnails\2.jpg" alt="New York" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h3>Photo 3</h3>
-                            <p>Description 3</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
         </div>
-    </div>
     <!-- Cards -->
     <section class="bg-dark" id="services">
-        <div class="container text-center">
+        <div class="container text-center cards-size">
             <h2 class="text-white mt-0">Choose your photo shoot!</h2>
             <hr class="divider divider-light" />
             <div class="row">
@@ -145,6 +162,11 @@
                                                             l'uso di aerografo, glitter e carte fine art; altrimenti sono disponibili
                                                             le opzioni solo digitale.
                             </p>
+                        
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="wedding" value="wedding" type="summit">esempi</button>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -154,6 +176,9 @@
                         <div class="card-body">
                             <h5 class="card-title">Party</h5>
                             <p id="card2" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="party" value="party" type="summit">esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -163,12 +188,15 @@
                         <div class="card-body">
                             <h5 class="card-title">Sport</h5>
                             <p id="card3" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="sport" value="wedding" type="summit">esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div id="card4" class="card">
-                        <img src="assets\img\wedding.jpg" alt="" class="card-img-top">
+                        <img src="assets\img\portrait.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Portraits</h5>
                             <p id="card4" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
@@ -177,7 +205,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div id="card5" class="card">
-                        <img src="assets\img\wedding.jpg" alt="" class="card-img-top">
+                        <img src="assets\img\still life.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Still Life</h5>
                             <p id="card5" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
@@ -186,7 +214,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div id="card6" class="card">
-                        <img src="assets\img\wedding.jpg" alt="" class="card-img-top">
+                        <img src="assets\img\street.jpeg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Street</h5>
                             <p id="card6" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
@@ -207,7 +235,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="testimonial4_slide">
-                            <!--<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />-->
+                            <img src="assets\img\default_avatar.png" class="img-circle img-responsive" />
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                             <h4>Client 1</h4>
                         </div>
@@ -219,6 +247,7 @@
                         while ($row = mysqli_fetch_assoc($q)) {
                             echo '<div class="carousel-item">
                                   <div class="testimonial4_slide">
+                                  <img src="assets\img\default_avatar.png" class="img-circle img-responsive" />
                                   <p>';
                             echo $row['recensione'].'</p><h4>';
                             echo $row['nome'].'</h4></div></div>';
@@ -316,6 +345,9 @@
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
                     <i class="bi-phone fs-2 mb-3 text-muted"></i>
                     <div>+1 (555) 123-4567</div>
+                    <br>
+                    <a href=""><img src="assets\img\facebooklogo.png" alt="" height="30px" width="30px"></a>
+                    <a href=""><img src="assets\img\instagramlogo.png" alt="" height="30px" width="30px"></a>
                 </div>
             </div>
         </div>
@@ -338,6 +370,7 @@
             
             $q=mysqli_query($connection, $query);
             mysqli_close($connection);
+            header("Location: index.php");
         }
         if(isset($_POST["nome"]) && isset($_POST["messaggio"])){
             $name=$_POST["nome"];
@@ -349,7 +382,9 @@
             
             $q=mysqli_query($connection, $query);
             mysqli_close($connection);
+            header("Location: index.php");
         }
     ?>
+  
 </body>
 </html>
