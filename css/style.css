@@ -43,6 +43,7 @@ header.masthead h1, header.masthead .h1 {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    
 }
 
 .card-text{
@@ -75,6 +76,8 @@ header.masthead h1, header.masthead .h1 {
     background-color: #ba4d30;
     border-color: #ba4d30;
 }
+
+
 hr.divider {
     height: 0.2rem;
     max-width: 3.25rem;
@@ -405,17 +408,28 @@ hr.divider-light {
     bottom: 0;
     left:1400px;
     z-index: 1030;
+    display: flex;
  
 }
 
 
-@media screen and (max-width: 1300px) {
-    .fixed-bottom-right{
-        left: 1200px;
-    }
-}
+
 
 /*Services css*/
+
+
+
+
+.services-bg{
+  padding-top: 6rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient( rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 
 .row {
     display: flex;
@@ -435,6 +449,7 @@ hr.divider-light {
     vertical-align: middle;
     width: 100%;
   }
+
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {

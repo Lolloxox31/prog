@@ -163,8 +163,8 @@
                                                             le opzioni solo digitale.
                             </p>
                         
-                            <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="wedding" value="wedding" type="summit">esempi</button>
+                            <form action="services.php" method="POST" id="pippo">
+                                <button class="btn btn-primary" name="wedding" value="wedding" type="summit">Esempi</button>
                             </form>
                             
                         </div>
@@ -177,7 +177,7 @@
                             <h5 class="card-title">Party</h5>
                             <p id="card2" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
                             <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="party" value="party" type="summit">esempi</button>
+                                <button class="btn btn-primary" name="party" value="party" type="summit">Esempi</button>
                             </form>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                             <h5 class="card-title">Sport</h5>
                             <p id="card3" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
                             <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="sport" value="wedding" type="summit">esempi</button>
+                                <button class="btn btn-primary" name="sport" value="wedding" type="summit">Esempi</button>
                             </form>
                         </div>
                     </div>
@@ -286,7 +286,7 @@
         </div>
     </section>
     <!-- About-->
-    <section class="about page-section bg-primary" id="about">
+    <section class="about page-section bg-primary" id="about" style="background-size:cover">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">

@@ -66,19 +66,19 @@
             <div class="collapse navbar-collapse flo" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 text-center">
                     <li class="nav-item p-1"><a class="nav-link" href="index.php">Home</a></li>
-                    <li class="nav-item p-1"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item p-1"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item p-1"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item p-1"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item p-1"><a class="nav-link" href="index.php#testimonials">Testimonials</a></li>
+                    <li class="nav-item p-1"><a class="nav-link" href="index.php#services">Services</a></li>
+                    <li class="nav-item p-1"><a class="nav-link" href="index.php#contact">Contact</a></li>
+                    <li class="nav-item p-1"><a class="nav-link" href="index.php#about">About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Nav tabs -->
 
-    <section class="bg-black" style=" height:1000px">
+    <section class=" services-bg" >
        
-        <div class="container bg-black" style="position:relative;top: 100px;">
+        <div class="container" >
             
             <ul class="nav nav-tabs">
                 <li class="nav-item">
@@ -190,6 +190,10 @@
         
 
     </section>
+  <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Mario Rossi</div></div>
+    </footer>
 
 
     
