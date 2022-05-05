@@ -175,7 +175,11 @@
                         <img src="assets\img\party.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Party</h5>
-                            <p id="card2" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card2" class="card-text">Reportage fotografico completo dei vostri eventi, per non perdere i momenti più importanti dei vostri party.
+                                Dai congressi alle conferenze, dagli eventi mondani di un festeggiamento di un traguardo aziendale alle feste a tema:
+                                Mario Rossi realizza servizi fotografici per eventi di ogni genere, ed i suoi scatti raccontano l'evento in tutta la sua completezza.
+                                Su richiesta il fotografo realizza anche pannelli personalizzati per fotografie di partecipanti all'evento.  
+                            </p>
                             <form action="services.php" method="POST">
                                 <button class="btn btn-primary" name="party" value="party" type="summit">Esempi</button>
                             </form>
@@ -187,7 +191,12 @@
                         <img src="assets\img\sport.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Sport</h5>
-                            <p id="card3" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card3" class="card-text">Mario Rossi è in grado di fornire a società sportive, 
+                                enti e organizzatori il servizio fotografico durante la manifestazione con stampa immediata.
+                                Alle società che ci ospitano forniamo una royalty sull’incasso, che decideremo insieme,
+                                cosi da contribuire alle spese della manifestazione stessa, oltre che a foto di reportage e 
+                                descrittive dell’evento, manifestazione, saggio o gara.
+                            </p>
                             <form action="services.php" method="POST">
                                 <button class="btn btn-primary" name="sport" value="wedding" type="summit">Esempi</button>
                             </form>
@@ -199,7 +208,16 @@
                         <img src="assets\img\portrait.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Portraits</h5>
-                            <p id="card4" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card4" class="card-text">L’aspetto e l’immagine che diamo di noi non sono mai stati così 
+                                importanti e sinonimo di successo professionale. Un buon ritratto 
+                                fotografico è un elemento fondamentale per esibire con più autorevolezza 
+                                le proprie competenze e presentarsi ad un nuovo cliente in maniera più efficace e diretta.
+                                La sessione fotografica di ritratto si svolge in contesti riservati, in maniera informale e rilassata. 
+                                Sarai seguito e guidato durante tutto il servizio fotografico.
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="portraits" value="portraits" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -208,7 +226,15 @@
                         <img src="assets\img\still life.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Still Life</h5>
-                            <p id="card5" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card5" class="card-text">La foto still-life è utile in molte situazioni, soprattutto quando bisogna rappresentare un oggetto 
+                                in modo dettagliato, mettendone in evidenza la forma, la composizione e ogni dettaglio. 
+                                Questo è indispensabile nei cataloghi di prodotto, ma anche in Internet, dove per acquistare 
+                                un oggetto il consumatore si deve basare sulla sua riproduzione fotografica in quanto è impossibile 
+                                vederlo di persona e toccarlo con mano, come si farebbe in un comune negozio.
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="life" value="life" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -217,7 +243,15 @@
                         <img src="assets\img\street.jpeg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Street</h5>
-                            <p id="card6" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card6" class="card-text">Sono un appassionato di street photography, uno stile fotografico moderno che vuole riprendere 
+                                i soggetti in situazioni reali e spontanee in luoghi pubblici al fine di evidenziare aspetti 
+                                della società nella vita di tutti i giorni, e sono alla continua ricerca di
+                                modelli/e per la realizzazione di scatti pubblicitari, se sei interessato non esitare a 
+                                contattarmi.
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="street" value="street" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -290,9 +324,39 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">We've got what you need!</h2>
+                    <h2 class="text-white mt-0">About me!</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                    <img src="assets\img\mario rossi.jpg" class="circular_image"/>
+                    <h1 class="text-white-75 mb-4" style="font-family:Brush Script MT, Brush Script Std, cursive;padding-top: 20px;">Mario Rossi</h1>
+                    <div style="padding: 10px; font-size:larger ">
+                        <p class="text-white-75 mb-4">Mario Rossi è da circa 20 anni un fotografo professionista con un talento per la narrazione. 
+                        Attualmente risiede a Roma, ma è pronto a viaggiare ovunque per portare a termine il lavoro.
+                        Design, fotografia e videografia sono i suoi obiettivi principali. 
+                        La sua prospettiva unica nell'industria creativa è evidente attraverso la sua estetica del colore 
+                        e derivata nel suo stile. Lo storytelling è un elemento chiave che sottolinea sia attraverso 
+                        il suo lavoro personale che professionale.
+                        Ho lavorato con i seguenti clienti: Budweiser, Highland Park Whisky, Danner Boots, Samsung, LG, Leica, ASUS, Sony,
+                        Matador, Mercedes Benz, Smartcar, Infiniti, Apple, Glenfiddich, Acura, Hyundai, DJI e molti altri.
+                        Mi viene chiesto molto sull'attrezzatura che uso, quindi l'ho elencata di seguito.
+                        </p>
+                        <hr style="color: white;">
+                        <p class="text-white-75 mb-4">
+                        Gear: <br>
+                            Sony A7RIII / Sony A7III / Sony A6500 br <br>
+                            Sony 16-35mm f2.8 GM <br>
+                            Sony Planar T* FE 50mm f/1.4 ZA Lens <br>
+                            Sony 70-200mm f2.8 GM <br>
+                            Sony 24mm f1.4 <br>
+                            Sigma 105mm f1.4 <br>
+                            Sony RX0 <br>
+                            Sony RX100V <br>
+                            DJI Mavic Air <br>
+                            DJI Mavic 2 Pro <br>
+                            DJI Ronin-S <br>
+                            Macbook Pro <br>
+                            iPad Pro 11
+                        </p>
+                    </div>
                     <a class="btn btn-primary btn-xl" href="#services">Get Started!</a>
                 </div>
             </div>

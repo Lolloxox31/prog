@@ -416,9 +416,45 @@ hr.divider-light {
 
 
 /*Services css*/
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.nav-link{
+  display:block;
+  padding:.5rem 1rem;
+  color:#ffffff;
+  text-decoration:none;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out}
+  
+@media (prefers-reduced-motion:reduce){
+  .nav-link{transition:none}
+}
 
+.nav-link:focus,.nav-link:hover{
+  color:#d6d6d6
+}
 
+/*Fine services css*/
 
+/*Avatar about*/
+.circular_image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display:inline-block;
+  vertical-align:middle;
+}
+.circular_image img{
+  width:100%;
+}
+
+/*fine avatar about*/
 
 .services-bg{
   padding-top: 6rem;

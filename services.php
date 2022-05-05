@@ -90,6 +90,15 @@
                 <li class="nav-item">
                     <a class=<?php if (empty($_POST['sport'])){ echo "\"nav-link\"";}else{echo "\"nav-link active\"";}; ?> data-toggle="tab" href="#menu2">Sport</a>
                 </li>
+                <li class="nav-item">
+                    <a class=<?php if (empty($_POST['portraits'])){ echo "\"nav-link\"";}else{echo "\"nav-link active\"";}; ?> data-toggle="tab" href="#menu3">Portraits</a>
+                </li>
+                <li class="nav-item">
+                    <a class=<?php if (empty($_POST['life'])){ echo "\"nav-link\"";}else{echo "\"nav-link active\"";}; ?> data-toggle="tab" href="#menu4">Still life</a>
+                </li>
+                <li class="nav-item">
+                    <a class=<?php if (empty($_POST['street'])){ echo "\"nav-link\"";}else{echo "\"nav-link active\"";}; ?> data-toggle="tab" href="#menu5">Street</a>
+                </li>
             </ul>
            
        
@@ -185,12 +194,114 @@
 
 
             </div>
+
+
+            <div class="tab-pane container <?php if (empty($_POST['portraits'])){ echo "fade";}else{echo "active";}; ?>" id="menu3">
+               <div class="row">
+                        <div class="column">
+                            <img src="assets\img\services\portraits\1.jpg">
+                            <img src="assets\img\services\portraits\5.jpg">
+                            <img src="assets\img\services\portraits\9.jpg">
+                        
+                        </div>
+                        <div class="column">
+                            <img src="assets\img\services\portraits\2.jpg">
+                            <img src="assets\img\services\portraits\6.jpg">
+                            <img src="assets\img\services\portraits\10.jpg">
+                    
+                        
+                        </div>
+                        <div class="column">
+                            <img src="assets\img\services\portraits\3.jpg">
+                            <img src="assets\img\services\portraits\7.jpg">
+                            <img src="assets\img\services\portraits\11.jpg">
+                        
+                        
+                        </div>
+                        <div class="column">
+                            <img src="assets\img\services\portraits\4.jpg">
+                            <img src="assets\img\services\portraits\8.jpg">
+                            <img src="assets\img\services\portraits\12.jpg">
+                            
+                        </div>
+                </div>
+            </div>
+
+            <div class="tab-pane container <?php if (empty($_POST['life'])){ echo "fade";}else{echo "active";}; ?>" id="menu4">
+               <div class="row">
+                        <div class="column">
+                            <img src="assets\img\services\still life\1.jpg">
+                            <img src="assets\img\services\still life\5.jpg">
+                            <img src="assets\img\services\still life\9.jpg">
+                        
+                        </div>
+                        <div class="column">
+                            <img src="assets\img\services\still life\2.jpg">
+                            <img src="assets\img\services\still life\6.jpg">
+                            <img src="assets\img\services\still life\10.jpg">
+                    
+                        
+                        </div>
+                        <div class="column">
+                        <img src="assets\img\services\still life\3.jpg">
+                        <img src="assets\img\services\still life\7.jpg">
+                        <img src="assets\img\services\still life\11.jpg">
+                        
+                        
+                        </div>
+                        <div class="column">
+                            <img src="assets\img\services\still life\4.jpg">
+                            <img src="assets\img\services\still life\8.jpg">
+                            <img src="assets\img\services\still life\12.jpg">
+                            
+                        </div>
+                </div>
+
+
+            </div>
+
+            <div class="tab-pane container <?php if (empty($_POST['street'])){ echo "fade";}else{echo "active";}; ?>" id="menu5">
+               <div class="row">
+                        <div class="column">
+                            <img src="assets\img\services\street\1.jpg">
+                            <img src="assets\img\services\street\5.jpg">
+                            <img src="assets\img\services\street\9.jpg">
+                        
+                        </div>
+                        <div class="column">
+                            <img src="assets\img\services\street\2.jpg">
+                            <img src="assets\img\services\street\6.jpg">
+                            <img src="assets\img\services\street\10.jpg">
+                    
+                        
+                        </div>
+                        <div class="column">
+                        <img src="assets\img\services\street\3.jpg">
+                        <img src="assets\img\services\street\7.jpg">
+                        <img src="assets\img\services\street\11.jpg">
+                        
+                        
+                        </div>
+                        <div class="column">
+                            <img src="assets\img\services\street\4.jpg">
+                            <img src="assets\img\services\street\8.jpg">
+                            <img src="assets\img\services\street\12.jpg">
+                            
+                        </div>
+                </div>
+            </div>
+            
+            
+            
+
+
             </div>
         </div>
         
 
     </section>
   <!-- Footer-->
+  
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Mario Rossi</div></div>
     </footer>
