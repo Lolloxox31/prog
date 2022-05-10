@@ -84,3 +84,4 @@ $(document).ready(function(){
     for(var i = 1; i <= 6; i++)
         activateSlider(i.toString());
 });
+

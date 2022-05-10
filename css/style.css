@@ -30,7 +30,9 @@ header.masthead h1, header.masthead .h1 {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+   
 }
+
 
 
 .cards-bg{
@@ -41,6 +43,7 @@ header.masthead h1, header.masthead .h1 {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    
 }
 
 .card-text{
@@ -59,7 +62,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .logo{
-    background: url("/assets/img/w3newbie.png") no-repeat; 
+    background: url("/assets/img/LogoProgettoMRBianco.png") no-repeat; 
     width: 170px; 
     height: 60px; 
     display: block; 
@@ -73,6 +76,8 @@ header.masthead h1, header.masthead .h1 {
     background-color: #ba4d30;
     border-color: #ba4d30;
 }
+
+
 hr.divider {
     height: 0.2rem;
     max-width: 3.25rem;
@@ -158,6 +163,8 @@ hr.divider-light {
         text-indent: -9999px;
     }
 }
+
+
 /*Testimonials section*/
 .heading {
     text-align: center;
@@ -391,3 +398,107 @@ hr.divider-light {
     height: 35px;
 }
 /* ------testimonial  close-------*/
+
+
+.fixed-bottom-right{
+    position:fixed;
+    height: 10%;
+    right:0;
+    top:600px;
+    bottom: 0;
+    left:1400px;
+    z-index: 1030;
+    display: flex;
+ 
+}
+
+
+
+
+/*Services css*/
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.nav-link{
+  display:block;
+  padding:.5rem 1rem;
+  color:#ffffff;
+  text-decoration:none;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out}
+  
+@media (prefers-reduced-motion:reduce){
+  .nav-link{transition:none}
+}
+
+.nav-link:focus,.nav-link:hover{
+  color:#d6d6d6
+}
+
+/*Fine services css*/
+
+/*Avatar about*/
+.circular_image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display:inline-block;
+  vertical-align:middle;
+}
+.circular_image img{
+  width:100%;
+}
+
+/*fine avatar about*/
+
+.services-bg{
+  padding-top: 6rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient( rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

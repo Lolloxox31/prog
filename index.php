@@ -1,3 +1,6 @@
+<?php
+ ob_start();
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -28,17 +31,29 @@
             recensioni: -recensione
                         -nome
         */
-        $db_name   = "lorenzoarcioni";
-        $db_usr    = "lorenzo";
+        $db_name   = "esempio";
+        $db_usr    = "root";
         $db_passwd = "lorenzo";
         $db_host   = "localhost";
-        $connection=mysqli_connect($db_host, $db_usr, $db_passwd);
+        $connection=mysqli_connect($db_host, $db_usr);
         $db=mysqli_select_db($connection, $db_name);
     ?>
 </head>
 <body onload="loaded()">
+   
+    <!--
+
+        <a href="">
+        <img src="assets/img/Facebook.png" class="fixed-bottom-right"  ></img> 
+         </a>
+    -->
+
+   
+   
+   
+
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-1 px-lg-1">
             <a class="navbar-brand logo" id="logo" href="#top">
             </a>
@@ -50,6 +65,7 @@
         
             <div class="collapse navbar-collapse flo" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 text-center">
+                    <li class="nav-item p-1"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#contact">Contact</a></li>
@@ -79,56 +95,57 @@
         </div>
     </header>
     <!-- Carousel -->
-    <div class="carousel-bg bg-dark" data-interval="2">
-        <div class="row gx-4 bg gx-lg-0 h-100 align-items-center justify-content-center text-center">
-            <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel1">
-                <h2 class="text-white mt-0">My photos</h2>
-                <hr class="divider divider-light" />
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    
+        <div class="carousel-bg bg-dark" data-interval="2">
+            <div class="row gx-4 bg gx-lg-0 h-100 align-items-center justify-content-center text-center">
+                <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel1">
+                    <h2 class="text-white mt-0">My photos</h2>
+                    <hr class="divider divider-light" />
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets\img\2ConLogo.png" alt="Los Angeles" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Photo 1</h3>
+                                <p>Description 1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets\img\3ConLogo.png" alt="Chicago" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Photo 2</h3>
+                                <p>Description 2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets\img\4ConLogo.png" alt="New York" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Photo 3</h3>
+                                <p>Description 3</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
-            
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets\img\portfolio\thumbnails\4.jpg" alt="Los Angeles" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h3>Photo 1</h3>
-                            <p>Description 1</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets\img\portfolio\thumbnails\1.jpg" alt="Chicago" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h3>Photo 2</h3>
-                            <p>Description 2</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets\img\portfolio\thumbnails\2.jpg" alt="New York" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h3>Photo 3</h3>
-                            <p>Description 3</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
         </div>
-    </div>
     <!-- Cards -->
     <section class="bg-dark" id="services">
-        <div class="container text-center">
+        <div class="container text-center cards-size">
             <h2 class="text-white mt-0">Choose your photo shoot!</h2>
             <hr class="divider divider-light" />
             <div class="row">
@@ -145,6 +162,11 @@
                                                             l'uso di aerografo, glitter e carte fine art; altrimenti sono disponibili
                                                             le opzioni solo digitale.
                             </p>
+                        
+                            <form action="services.php" method="POST" id="pippo">
+                                <button class="btn btn-primary" name="wedding" value="wedding" type="summit">Esempi</button>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -153,7 +175,14 @@
                         <img src="assets\img\party.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Party</h5>
-                            <p id="card2" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card2" class="card-text">Reportage fotografico completo dei vostri eventi, per non perdere i momenti più importanti dei vostri party.
+                                Dai congressi alle conferenze, dagli eventi mondani di un festeggiamento di un traguardo aziendale alle feste a tema:
+                                Mario Rossi realizza servizi fotografici per eventi di ogni genere, ed i suoi scatti raccontano l'evento in tutta la sua completezza.
+                                Su richiesta il fotografo realizza anche pannelli personalizzati per fotografie di partecipanti all'evento.  
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="party" value="party" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -162,34 +191,67 @@
                         <img src="assets\img\sport.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Sport</h5>
-                            <p id="card3" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card3" class="card-text">Mario Rossi è in grado di fornire a società sportive, 
+                                enti e organizzatori il servizio fotografico durante la manifestazione con stampa immediata.
+                                Alle società che ci ospitano forniamo una royalty sull’incasso, che decideremo insieme,
+                                cosi da contribuire alle spese della manifestazione stessa, oltre che a foto di reportage e 
+                                descrittive dell’evento, manifestazione, saggio o gara.
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="sport" value="wedding" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div id="card4" class="card">
-                        <img src="assets\img\wedding.jpg" alt="" class="card-img-top">
+                        <img src="assets\img\portrait.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Portraits</h5>
-                            <p id="card4" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card4" class="card-text">L’aspetto e l’immagine che diamo di noi non sono mai stati così 
+                                importanti e sinonimo di successo professionale. Un buon ritratto 
+                                fotografico è un elemento fondamentale per esibire con più autorevolezza 
+                                le proprie competenze e presentarsi ad un nuovo cliente in maniera più efficace e diretta.
+                                La sessione fotografica di ritratto si svolge in contesti riservati, in maniera informale e rilassata. 
+                                Sarai seguito e guidato durante tutto il servizio fotografico.
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="portraits" value="portraits" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div id="card5" class="card">
-                        <img src="assets\img\wedding.jpg" alt="" class="card-img-top">
+                        <img src="assets\img\still life.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Still Life</h5>
-                            <p id="card5" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card5" class="card-text">La foto still-life è utile in molte situazioni, soprattutto quando bisogna rappresentare un oggetto 
+                                in modo dettagliato, mettendone in evidenza la forma, la composizione e ogni dettaglio. 
+                                Questo è indispensabile nei cataloghi di prodotto, ma anche in Internet, dove per acquistare 
+                                un oggetto il consumatore si deve basare sulla sua riproduzione fotografica in quanto è impossibile 
+                                vederlo di persona e toccarlo con mano, come si farebbe in un comune negozio.
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="life" value="life" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div id="card6" class="card">
-                        <img src="assets\img\wedding.jpg" alt="" class="card-img-top">
+                        <img src="assets\img\street.jpeg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Street</h5>
-                            <p id="card6" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                            <p id="card6" class="card-text">Sono un appassionato di street photography, uno stile fotografico moderno che vuole riprendere 
+                                i soggetti in situazioni reali e spontanee in luoghi pubblici al fine di evidenziare aspetti 
+                                della società nella vita di tutti i giorni, e sono alla continua ricerca di
+                                modelli/e per la realizzazione di scatti pubblicitari, se sei interessato non esitare a 
+                                contattarmi.
+                            </p>
+                            <form action="services.php" method="POST">
+                                <button class="btn btn-primary" name="street" value="street" type="summit">Esempi</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -207,7 +269,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="testimonial4_slide">
-                            <!--<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />-->
+                            <img src="assets\img\default_avatar.png" class="img-circle img-responsive" />
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                             <h4>Client 1</h4>
                         </div>
@@ -219,6 +281,7 @@
                         while ($row = mysqli_fetch_assoc($q)) {
                             echo '<div class="carousel-item">
                                   <div class="testimonial4_slide">
+                                  <img src="assets\img\default_avatar.png" class="img-circle img-responsive" />
                                   <p>';
                             echo $row['recensione'].'</p><h4>';
                             echo $row['nome'].'</h4></div></div>';
@@ -257,13 +320,43 @@
         </div>
     </section>
     <!-- About-->
-    <section class="about page-section bg-primary" id="about">
+    <section class="about page-section bg-primary" id="about" style="background-size:cover">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">We've got what you need!</h2>
+                    <h2 class="text-white mt-0">About me!</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                    <img src="assets\img\mario rossi.jpg" class="circular_image"/>
+                    <h1 class="text-white-75 mb-4" style="font-family:Brush Script MT, Brush Script Std, cursive;padding-top: 20px;">Mario Rossi</h1>
+                    <div style="padding: 10px; font-size:larger ">
+                        <p class="text-white-75 mb-4">Mario Rossi è da circa 20 anni un fotografo professionista con un talento per la narrazione. 
+                        Attualmente risiede a Roma, ma è pronto a viaggiare ovunque per portare a termine il lavoro.
+                        Design, fotografia e videografia sono i suoi obiettivi principali. 
+                        La sua prospettiva unica nell'industria creativa è evidente attraverso la sua estetica del colore 
+                        e derivata nel suo stile. Lo storytelling è un elemento chiave che sottolinea sia attraverso 
+                        il suo lavoro personale che professionale.
+                        Ho lavorato con i seguenti clienti: Budweiser, Highland Park Whisky, Danner Boots, Samsung, LG, Leica, ASUS, Sony,
+                        Matador, Mercedes Benz, Smartcar, Infiniti, Apple, Glenfiddich, Acura, Hyundai, DJI e molti altri.
+                        Mi viene chiesto molto sull'attrezzatura che uso, quindi l'ho elencata di seguito.
+                        </p>
+                        <hr style="color: white;">
+                        <p class="text-white-75 mb-4">
+                        Gear: <br>
+                            Sony A7RIII / Sony A7III / Sony A6500 br <br>
+                            Sony 16-35mm f2.8 GM <br>
+                            Sony Planar T* FE 50mm f/1.4 ZA Lens <br>
+                            Sony 70-200mm f2.8 GM <br>
+                            Sony 24mm f1.4 <br>
+                            Sigma 105mm f1.4 <br>
+                            Sony RX0 <br>
+                            Sony RX100V <br>
+                            DJI Mavic Air <br>
+                            DJI Mavic 2 Pro <br>
+                            DJI Ronin-S <br>
+                            Macbook Pro <br>
+                            iPad Pro 11
+                        </p>
+                    </div>
                     <a class="btn btn-primary btn-xl" href="#services">Get Started!</a>
                 </div>
             </div>
@@ -316,6 +409,9 @@
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
                     <i class="bi-phone fs-2 mb-3 text-muted"></i>
                     <div>+1 (555) 123-4567</div>
+                    <br>
+                    <a href=""><img src="assets\img\facebooklogo.png" alt="" height="30px" width="30px"></a>
+                    <a href=""><img src="assets\img\instagramlogo.png" alt="" height="30px" width="30px"></a>
                 </div>
             </div>
         </div>
@@ -338,6 +434,7 @@
             
             $q=mysqli_query($connection, $query);
             mysqli_close($connection);
+            header("Location: index.php");
         }
         if(isset($_POST["nome"]) && isset($_POST["messaggio"])){
             $name=$_POST["nome"];
@@ -349,7 +446,9 @@
             
             $q=mysqli_query($connection, $query);
             mysqli_close($connection);
+            header("Location: index.php");
         }
     ?>
+  
 </body>
 </html>
