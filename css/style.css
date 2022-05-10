@@ -413,8 +413,6 @@ hr.divider-light {
 }
 
 
-
-
 /*Services css*/
 .nav{
   display:flex;
@@ -501,4 +499,21 @@ hr.divider-light {
       flex: 100%;
       max-width: 100%;
     }
+  }
+
+  /*Services cards buttons*/
+
+  .btn-cards {
+    color: #fff;
+    background-color: #4b4746;
+    border-color: #4b4746;
+    font-family:'Poppins',sans-serif;
+    font-size:17px;
+    border-radius: 15px;
+  }
+  .btn-cards:hover {
+    color: #fff;
+    background-color: #211e1d;
+    border-color: #211e1d;
+
   }

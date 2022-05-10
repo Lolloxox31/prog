@@ -42,16 +42,10 @@
 <body onload="loaded()">
    
     <!--
-
         <a href="">
         <img src="assets/img/Facebook.png" class="fixed-bottom-right"  ></img> 
          </a>
     -->
-
-   
-   
-   
-
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-1 px-lg-1">
@@ -98,7 +92,7 @@
     
         <div class="carousel-bg bg-dark" data-interval="2">
             <div class="row gx-4 bg gx-lg-0 h-100 align-items-center justify-content-center text-center">
-                <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel1">
+                <div id="demo" class="carousel slide carousel-slide" data-bs-ride="carousel1">
                     <h2 class="text-white mt-0">My photos</h2>
                     <hr class="divider divider-light" />
                     <!-- Indicators/dots -->
@@ -111,21 +105,21 @@
                     <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets\img\2ConLogo.png" alt="Los Angeles" class="d-block w-100">
+                            <img src="assets\img\services\wedding\6.jpg"  alt="Los Angeles" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Photo 1</h3>
                                 <p>Description 1</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="assets\img\3ConLogo.png" alt="Chicago" class="d-block w-100">
+                            <img src="assets\img\services\street\10.jpg" alt="Chicago" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Photo 2</h3>
                                 <p>Description 2</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="assets\img\4ConLogo.png" alt="New York" class="d-block w-100">
+                            <img src="assets\img\services\portraits\4.jpg" alt="New York" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Photo 3</h3>
                                 <p>Description 3</p>
@@ -164,7 +158,7 @@
                             </p>
                         
                             <form action="services.php" method="POST" id="pippo">
-                                <button class="btn btn-primary" name="wedding" value="wedding" type="summit">Esempi</button>
+                                <button class="btn btn-cards " name="wedding" value="wedding" type="summit">Esempi</button>
                             </form>
                             
                         </div>
@@ -181,7 +175,7 @@
                                 Su richiesta il fotografo realizza anche pannelli personalizzati per fotografie di partecipanti all'evento.  
                             </p>
                             <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="party" value="party" type="summit">Esempi</button>
+                                <button class="btn btn-cards" name="party" value="party" type="summit">Esempi</button>
                             </form>
                         </div>
                     </div>
@@ -198,7 +192,7 @@
                                 descrittive dell’evento, manifestazione, saggio o gara.
                             </p>
                             <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="sport" value="wedding" type="summit">Esempi</button>
+                                <button class="btn btn-cards" name="sport" value="wedding" type="summit">Esempi</button>
                             </form>
                         </div>
                     </div>
@@ -216,7 +210,7 @@
                                 Sarai seguito e guidato durante tutto il servizio fotografico.
                             </p>
                             <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="portraits" value="portraits" type="summit">Esempi</button>
+                                <button class="btn btn-cards" name="portraits" value="portraits" type="summit">Esempi</button>
                             </form>
                         </div>
                     </div>
@@ -233,7 +227,7 @@
                                 vederlo di persona e toccarlo con mano, come si farebbe in un comune negozio.
                             </p>
                             <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="life" value="life" type="summit">Esempi</button>
+                                <button class="btn btn-cards" name="life" value="life" type="summit">Esempi</button>
                             </form>
                         </div>
                     </div>
@@ -250,7 +244,7 @@
                                 contattarmi.
                             </p>
                             <form action="services.php" method="POST">
-                                <button class="btn btn-primary" name="street" value="street" type="summit">Esempi</button>
+                                <button class="btn btn-cards" name="street" value="street" type="summit">Esempi</button>
                             </form>
                         </div>
                     </div>
@@ -405,21 +399,69 @@
                     </form>
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div>+1 (555) 123-4567</div>
-                    <br>
-                    <a href=""><img src="assets\img\facebooklogo.png" alt="" height="30px" width="30px"></a>
-                    <a href=""><img src="assets\img\instagramlogo.png" alt="" height="30px" width="30px"></a>
-                </div>
-            </div>
+          
         </div>
     </section>
     <!-- Footer-->
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Mario Rossi</div></div>
-    </footer>
+
+
+    <div class="bg-light">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                <div class="col-lg-4">
+                    <h5>Contatti</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><strong class="p-0 text-muted">MARIO ROSSI  PHOTOGRAPHER </strong></li>
+                    <li class="nav-item mb-2"><p  class=" p-0 text-muted">Via Gatti, 011<br>
+                                                                                            44370 Roma, Italia <br>
+                                                                                            P.IVA  06178910421</p></li>
+                    <li class="nav-item mb-2"><p  class=" p-0 text-muted">Tel. +39 611 34082535</p></li>
+                    <li class="nav-item mb-2"><p  class="  text-muted">E-mail rossi@gmail.com</p></li>
+                    
+                    </ul>
+                </div>
+
+             
+
+                <div class="col-lg-4 ">
+                    <h5>Clienti</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><img src="assets\img\LG-Logo.png" width="100" class="nav-link p-0 text-muted"></li>
+                    <li class="nav-item mb-2"><img src="assets\img\samsung.png" width="100" class="nav-link p-0 text-muted"></li>
+                    <li class="nav-item mb-2  px-3"><img src="assets\img\apple.png" width="70" class="nav-link p-0 text-muted"></li>
+                    <li class="nav-item mb-2  px-3"><img src="assets\img\mercedes.png" width="70" class="nav-link p-0 text-muted"></li>
+
+
+
+                    
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 ">
+                    <form>
+                    <h5>Iscriviti alla mia Newsletter</h5>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Inscriviti</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>Copyright &copy; 2022 - Mario Rossi.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\facebooklogo.png" alt="" height="30" width="30"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\instagramlogo.png" alt="" height="30" width="30"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\twitter.png" alt="" height="30" width="30"></a></li>
+                </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
     <?php
         //Messaggi
         if(isset($_POST["name"]) && isset($_POST["message"]) && isset($_POST["email"]) && isset($_POST["phone"])){

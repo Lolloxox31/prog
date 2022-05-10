@@ -1,3 +1,7 @@
+<?php
+ ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -14,27 +18,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Mario Rossi Photography</title>
-    <?php
-        //Host: localhost
-        //usr:  lorenzo
-        //pwd:  lorenzo
-        //db:   lorenzoarcioni
-        /*Il db deve avere due tabelle:
-            messaggi:   -name
-                        -email
-                        -phone
-                        -message
 
-            recensioni: -recensione
-                        -nome
-        */
-        $db_name   = "esempio";
-        $db_usr    = "root";
-        $db_passwd = "lorenzo";
-        $db_host   = "localhost";
-        $connection=mysqli_connect($db_host, $db_usr);
-        $db=mysqli_select_db($connection, $db_name);
-    ?>
 </head>
 <body onload="loaded()">
    
