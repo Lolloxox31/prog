@@ -18,6 +18,27 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Mario Rossi Photography</title>
+    <?php
+        //Host: localhost
+        //usr:  lorenzo
+        //pwd:  lorenzo
+        //db:   lorenzoarcioni
+        /*Il db deve avere due tabelle:
+            messaggi:   -name
+                        -email
+                        -phone
+                        -message
+
+            recensioni: -recensione
+                        -nome
+        */
+        $db_name   = "esempio";
+        $db_usr    = "root";
+        $db_passwd = "lorenzo";
+        $db_host   = "localhost";
+        $connection=mysqli_connect($db_host, $db_usr);
+        $db=mysqli_select_db($connection, $db_name);
+    ?>
 
 </head>
 <body onload="loaded()">
@@ -63,7 +84,8 @@
     <section class=" services-bg" >
        
         <div class="container" >
-            
+            <h2 class="text-white mt-0 text-center">I nostri esempi!</h2>
+            <hr class="divider divider-light" />
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class=<?php if (empty($_POST['wedding'])){ echo "\"nav-link\"";}else{echo "\"nav-link active\"";}; ?>  data-toggle="tab" href="#home">Wedding</a>
@@ -284,11 +306,79 @@
         
 
     </section>
-  <!-- Footer-->
-  
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Mario Rossi</div></div>
-    </footer>
+   <!-- Footer-->
+
+   <div class="bg-light" id="footer">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                <div class="col-lg-4">
+                    <h5>Contatti</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><strong class="p-0 text-muted">MARIO ROSSI  PHOTOGRAPHER </strong></li>
+                    <li class="nav-item mb-2"><p  class=" p-0 text-muted">Via Gatti, 011<br>
+                                                                                            44370 Roma, Italia <br>
+                                                                                            P.IVA  06178910421</p></li>
+                    <li class="nav-item mb-2"><p  class=" p-0 text-muted">Tel. +39 611 34082535</p></li>
+                    <li class="nav-item mb-2"><p  class="  text-muted">E-mail rossi@gmail.com</p></li>
+                    
+                    </ul>
+                </div>
+
+             
+
+                <div class="col-lg-4 ">
+                    <h5>Clienti</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><img src="assets\img\LG-Logo.png" width="100" class="nav-link p-0 text-muted"></li>
+                    <li class="nav-item mb-2"><img src="assets\img\samsung.png" width="100" class="nav-link p-0 text-muted"></li>
+                    <li class="nav-item mb-2  px-3"><img src="assets\img\apple.png" width="70" class="nav-link p-0 text-muted"></li>
+                    <li class="nav-item mb-2  px-3"><img src="assets\img\mercedes.png" width="70" class="nav-link p-0 text-muted"></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 ">
+                    <form id="newsletterForm" action="index.php#footer" method="POST"  onsubmit="return validaIscrizione();" >
+                    <h5>Iscriviti alla mia Newsletter</h5>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input name="newsletter" name="newsletter" id="email" type="email" class="form-control" placeholder="Email address" data-sb-validations="required,email">
+
+                        <button class="btn btn-primary" type="submit" style="border-radius: 10px; background-color:orangered; border-color:orangered;">Inscriviti</button>
+                    </div>
+                    <div class="invalid-feedback" id="em" data-sb-feedback="email:required">An email is required.</div>
+                    <div class="invalid-feedback" id="ea" data-sb-feedback="email:email">Email is not valid.</div>
+                    </form>
+                </div>
+                </div>
+
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>Copyright &copy; 2022 - Mario Rossi.</p>
+                <p>Lorenzo Arcioni - Damiano Sparro - Luca D'Assaro</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\facebooklogo.png" alt="" height="30" width="30"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\instagramlogo.png" alt="" height="30" width="30"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\twitter.png" alt="" height="30" width="30"></a></li>
+                </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+   <?php
+        if(isset($_POST["newsletter"])){
+            $newsletter=$_POST["newsletter"];
+        
+            $query = "INSERT INTO `newsletter` 
+                    (`email`) 
+                    VALUES 
+                    ("."'".$newsletter."')";
+            
+            $q=mysqli_query($connection, $query);
+            mysqli_close($connection);
+            header("Location: services.php");
+        }
+   ?>
 
 
     
