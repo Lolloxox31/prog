@@ -413,7 +413,7 @@ hr.divider-light {
 }
 
 
-/*Services css*/
+/*examples css*/
 .nav{
   display:flex;
   flex-wrap:wrap;
@@ -436,7 +436,9 @@ hr.divider-light {
   color:#d6d6d6
 }
 
-/*Fine services css*/
+
+
+/*Fine examples css*/
 
 /*Avatar about*/
 .circular_image {

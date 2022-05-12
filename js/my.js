@@ -33,6 +33,20 @@ function validaReview(){
 
     return true;
 }
+
+//Funzione utilizzata per validare l'iscrizione alla newsletter
+function validaIscrizione(){
+    const f = document.getElementById("newsletterForm");
+    if(f.newsletter.value == ""){
+        document.getElementById("em").style.display = 'block';
+        return false;
+    }
+    return true;
+}
+
+
+
+
 //Funzione utilizzata per cambiare la navbar allo scroll della pagina
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
