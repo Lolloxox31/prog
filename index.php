@@ -62,6 +62,7 @@
                     <li class="nav-item p-1"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item p-1"><a class="nav-link" href="blog\blog.php">Blog</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#about">About</a></li>
                 </ul>
@@ -107,21 +108,21 @@
                         <div class="carousel-item active">
                             <img src="assets\img\services\wedding\6.jpg"  alt="Los Angeles" class="d-block w-100">
                             <div class="carousel-caption">
-                                <h3>Photo 1</h3>
+                                <h3>Wedding</h3>
                                 <p>Description 1</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="assets\img\services\street\10.jpg" alt="Chicago" class="d-block w-100">
                             <div class="carousel-caption">
-                                <h3>Photo 2</h3>
+                                <h3>Street</h3>
                                 <p>Description 2</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="assets\img\services\portraits\4.jpg" alt="New York" class="d-block w-100">
                             <div class="carousel-caption">
-                                <h3>Photo 3</h3>
+                                <h3>Portrait</h3>
                                 <p>Description 3</p>
                             </div>
                         </div>
@@ -157,7 +158,7 @@
                                                             le opzioni solo digitale.
                             </p>
                         
-                            <form action="services.php" method="POST" id="pippo">
+                            <form action="services/services.php" method="POST" id="pippo">
                                 <button class="btn btn-cards " name="wedding" value="wedding" type="summit">Esempi</button>
                             </form>
                             
@@ -174,7 +175,7 @@
                                 Mario Rossi realizza servizi fotografici per eventi di ogni genere, ed i suoi scatti raccontano l'evento in tutta la sua completezza.
                                 Su richiesta il fotografo realizza anche pannelli personalizzati per fotografie di partecipanti all'evento.  
                             </p>
-                            <form action="services.php" method="POST">
+                            <form action="services/services.php" method="POST">
                                 <button class="btn btn-cards" name="party" value="party" type="summit">Esempi</button>
                             </form>
                         </div>
@@ -191,7 +192,7 @@
                                 cosi da contribuire alle spese della manifestazione stessa, oltre che a foto di reportage e 
                                 descrittive dell’evento, manifestazione, saggio o gara.
                             </p>
-                            <form action="services.php" method="POST">
+                            <form action="services/services.php" method="POST">
                                 <button class="btn btn-cards" name="sport" value="wedding" type="summit">Esempi</button>
                             </form>
                         </div>
@@ -209,7 +210,7 @@
                                 La sessione fotografica di ritratto si svolge in contesti riservati, in maniera informale e rilassata. 
                                 Sarai seguito e guidato durante tutto il servizio fotografico.
                             </p>
-                            <form action="services.php" method="POST">
+                            <form action="services/services.php" method="POST">
                                 <button class="btn btn-cards" name="portraits" value="portraits" type="summit">Esempi</button>
                             </form>
                         </div>
@@ -226,7 +227,7 @@
                                 un oggetto il consumatore si deve basare sulla sua riproduzione fotografica in quanto è impossibile 
                                 vederlo di persona e toccarlo con mano, come si farebbe in un comune negozio.
                             </p>
-                            <form action="services.php" method="POST">
+                            <form action="services/services.php" method="POST">
                                 <button class="btn btn-cards" name="life" value="life" type="summit">Esempi</button>
                             </form>
                         </div>
@@ -243,7 +244,7 @@
                                 modelli/e per la realizzazione di scatti pubblicitari, se sei interessato non esitare a 
                                 contattarmi.
                             </p>
-                            <form action="services.php" method="POST">
+                            <form action="services/services.php" method="POST">
                                 <button class="btn btn-cards" name="street" value="street" type="summit">Esempi</button>
                             </form>
                         </div>
