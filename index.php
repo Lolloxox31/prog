@@ -62,7 +62,7 @@
                     <li class="nav-item p-1"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item p-1"><a class="nav-link" href="blog\blog.php">Blog</a></li>
+                    <li class="nav-item p-1"><a class="nav-link" href="blog\pagina1.php">Blog</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item p-1"><a class="nav-link" href="#about">About</a></li>
                 </ul>
@@ -453,7 +453,6 @@
 
                 <div class="d-flex justify-content-between py-4 my-4 border-top">
                 <p>Copyright &copy; 2022 - Mario Rossi.</p>
-                <p>Lorenzo Arcioni - Damiano Sparro - Luca D'Assaro</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\facebooklogo.png" alt="" height="30" width="30"></a></li>
                     <li class="ms-3"><a class="link-dark" href="#"><img src="assets\img\instagramlogo.png" alt="" height="30" width="30"></a></li>
