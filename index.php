@@ -84,7 +84,7 @@
                  <!--Container bottone piu testo sotto al divider-->
                 <div class="col-lg-8 align-self-baseline">
                     <p class="text-white-75 mb-5">You don't take a photograph. You ask quietly to borrow it.</p>
-                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                    <a class="btn btn-primary btn-xl" href="#about">Scopri di più</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
         <div class="carousel-bg bg-dark" data-interval="2">
             <div class="row gx-4 bg gx-lg-0 h-100 align-items-center justify-content-center text-center">
                 <div id="demo" class="carousel slide carousel-slide" data-bs-ride="carousel1">
-                    <h2 class="text-white mt-0">My photos</h2>
+                    <h2 class="text-white mt-0">Le mie foto</h2>
                     <hr class="divider divider-light" />
                     <!-- Indicators/dots -->
                     <div class="carousel-indicators">
@@ -109,21 +109,21 @@
                             <img src="assets\img\services\wedding\6.jpg"  alt="Los Angeles" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Wedding</h3>
-                                <p>Description 1</p>
+                                <p>Matrimonio di Alberto e Angela</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="assets\img\services\street\10.jpg" alt="Chicago" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Street</h3>
-                                <p>Description 2</p>
+                                <p>Tokyo 2021</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="assets\img\services\portraits\4.jpg" alt="New York" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Portrait</h3>
-                                <p>Description 3</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
     <!-- Cards -->
     <section class="bg-dark" id="services">
         <div class="container text-center cards-size">
-            <h2 class="text-white mt-0">Choose your photo shoot!</h2>
+            <h2 class="text-white mt-0">Scegli il tuo servizio fotografico!</h2>
             <hr class="divider divider-light" />
             <div class="row">
                 <div class="col-lg-4 mb-4">
@@ -265,8 +265,8 @@
                     <div class="carousel-item active">
                         <div class="testimonial4_slide">
                             <img src="assets\img\default_avatar.png" class="img-circle img-responsive" />
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 1</h4>
+                            <p>Sono molto soddisfatto del servizio offerto dal Sig. Mario Rossi per il matrimonio di mia figlia. Persona seria e professionale.</p>
+                            <h4>Gianni</h4>
                         </div>
                     </div>
                     <?php
@@ -291,24 +291,24 @@
                     <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
-            <h3 class="text-white mt-0">Write a review</h3>
+            <h3 class="text-white mt-0">Scrivi una recensione</h3>
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5 mt-5">
                 <div class="col-lg-6">
                     <form id="reviewForm" action="index.php#testimonials" method="POST" name="reviewForm" onsubmit="return validaReview();">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="nome" id="nome" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Full name</label>
+                            <label for="name">Nome completo</label>
                             <div class="invalid-feedback" id="nr2" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" name="messaggio" id="messaggio" maxlength="300" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
+                            <label for="message">Messaggio</label>
                             <div class="invalid-feedback" id="mr2" data-sb-feedback="message:required">A message is required.</div>
                         </div>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton2" type="submit">Submit</button></div>
+                        <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton2" type="submit">Invia</button></div>
                     </form>
                 </div>
             </div>
@@ -352,7 +352,7 @@
                             iPad Pro 11
                         </p>
                     </div>
-                    <a class="btn btn-primary btn-xl" href="#services">Get Started!</a>
+                    <a class="btn btn-primary btn-xl" href="#services">Inizia ora!</a>
                 </div>
             </div>
         </div>
@@ -362,7 +362,7 @@
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Let's Get In Touch!</h2>
+                    <h2 class="mt-0">Mettiamoci in contatto!</h2>
                     <hr class="divider" />
                     <p class="text-muted mb-5">Contattami e richiedi un preventivo!</p>
                 </div>
@@ -373,30 +373,30 @@
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" id="nr" data-sb-feedback="name:required">A name is required.</div>
+                            <label for="name">Nome completo</label>
+                            <div class="invalid-feedback" id="nr" data-sb-feedback="name:required">E' richiesto un nome.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" id="er" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" id="ei" data-sb-feedback="email:email">Email is not valid.</div>
+                            <label for="email">Indirizzo email</label>
+                            <div class="invalid-feedback" id="er" data-sb-feedback="email:required">E' richiesta una email.</div>
+                            <div class="invalid-feedback" id="ei" data-sb-feedback="email:email">Email non valida.</div>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="phone" type="number" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" id="pr" data-sb-feedback="phone:required">A phone number is required.</div>
+                            <label for="phone">Numero di telefono</label>
+                            <div class="invalid-feedback" id="pr" data-sb-feedback="phone:required">E' richiesto un numero di telefono</div>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" name="message" id="message" maxlength="300" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" id="mr" data-sb-feedback="message:required">A message is required.</div>
+                            <label for="message">Messaggio</label>
+                            <div class="invalid-feedback" id="mr" data-sb-feedback="message:required">E' richiesto un messaggio.</div>
                         </div>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button></div>
+                        <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Invia</button></div>
                     </form>
                 </div>
             </div>
@@ -438,15 +438,15 @@
                 <div class="col-lg-4 ">
                     <form id="newsletterForm" action="index.php#footer" method="POST"  onsubmit="return validaIscrizione();" >
                     <h5>Iscriviti alla mia Newsletter</h5>
-                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <p>Aggiornamenti mensili sul mio lavoro.</p>
                     <div class="d-flex w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input name="newsletter" name="newsletter" id="email" type="email" class="form-control" placeholder="Email address" data-sb-validations="required,email">
+                        <label for="newsletter1" class="visually-hidden">Indirizzo email</label>
+                        <input name="newsletter" name="newsletter" id="email" type="email" class="form-control" placeholder="Indirizzo email" data-sb-validations="required,email">
 
-                        <button class="btn btn-primary" type="submit" style="border-radius: 10px; background-color:orangered; border-color:orangered;">Inscriviti</button>
+                        <button class="btn btn-primary" type="submit" style="border-radius: 10px; background-color:orangered; border-color:orangered;">Iscriviti</button>
                     </div>
-                    <div class="invalid-feedback" id="em" data-sb-feedback="email:required">An email is required.</div>
-                    <div class="invalid-feedback" id="ea" data-sb-feedback="email:email">Email is not valid.</div>
+                    <div class="invalid-feedback" id="em" data-sb-feedback="email:required">E' richiesta una email.</div>
+                    <div class="invalid-feedback" id="ea" data-sb-feedback="email:email">Email non valida.</div>
                     </form>
                 </div>
                 </div>

@@ -342,24 +342,23 @@
                 </div>
 
                 <div class="col-lg-4 ">
-                    <form id="newsletterForm" action="..\index.php#footer" method="POST"  onsubmit="return validaIscrizione();" >
+                    <form id="newsletterForm" action="index.php#footer" method="POST"  onsubmit="return validaIscrizione();" >
                     <h5>Iscriviti alla mia Newsletter</h5>
-                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <p>Aggiornamenti mensili sul mio lavoro.</p>
                     <div class="d-flex w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input name="newsletter" name="newsletter" id="email" type="email" class="form-control" placeholder="Email address" data-sb-validations="required,email">
+                        <label for="newsletter1" class="visually-hidden">Indirizzo email</label>
+                        <input name="newsletter" name="newsletter" id="email" type="email" class="form-control" placeholder="Indirizzo email" data-sb-validations="required,email">
 
-                        <button class="btn btn-primary" type="submit" style="border-radius: 10px; background-color:orangered; border-color:orangered;">Inscriviti</button>
+                        <button class="btn btn-primary" type="submit" style="border-radius: 10px; background-color:orangered; border-color:orangered;">Iscriviti</button>
                     </div>
-                    <div class="invalid-feedback" id="em" data-sb-feedback="email:required">An email is required.</div>
-                    <div class="invalid-feedback" id="ea" data-sb-feedback="email:email">Email is not valid.</div>
+                    <div class="invalid-feedback" id="em" data-sb-feedback="email:required">E' richiesta una email.</div>
+                    <div class="invalid-feedback" id="ea" data-sb-feedback="email:email">Email non valida.</div>
                     </form>
                 </div>
                 </div>
 
                 <div class="d-flex justify-content-between py-4 my-4 border-top">
                 <p>Copyright &copy; 2022 - Mario Rossi.</p>
-                <p>Lorenzo Arcioni - Damiano Sparro - Luca D'Assaro</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="#"><img src="..\assets\img\facebooklogo.png" alt="" height="30" width="30"></a></li>
                     <li class="ms-3"><a class="link-dark" href="#"><img src="..\assets\img\instagramlogo.png" alt="" height="30" width="30"></a></li>
@@ -369,6 +368,7 @@
             </footer>
         </div>
     </div>
+
    <?php
         if(isset($_POST["newsletter"])){
             $newsletter=$_POST["newsletter"];
